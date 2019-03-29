@@ -1,0 +1,54 @@
+  <!DOCTYPE html>
+  <html>
+    <head>
+  		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+  		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+      	<style>
+      		body {
+      			padding-left: 10px;
+      			padding-top: 10px;
+      			padding-right: 10px;
+      			padding-bottom: 10px;
+      			width: 240px;
+      		}
+      		input {
+      			width: 240px;
+      		}
+        	.form-control-clear {
+  				z-index: 10;
+  				pointer-events: auto;
+  				cursor: pointer;
+			}
+      	</style>
+    </head>
+    <body>
+    	<form>
+    		<div class="form-group has-feedback has-clear">
+				<label>Audience: </label>
+				<input id="ecsAudienceFilter" class="form-control hasclear" type="text" placeholder="e.g. Dogfood, Production" autocomplete="off" disabled />
+    			<span class="form-control-clear glyphicon glyphicon-remove form-control-feedback hidden"></span>
+      		</div>
+    		<div class="form-group has-feedback has-clear">
+				<label>Channel: </label>
+				<input id="ecsChannelFilter" class="form-control hasclear" type="text" placeholder="e.g. DevMain, CC" autocomplete="off" disabled />
+    			<span class="form-control-clear glyphicon glyphicon-remove form-control-feedback hidden"></span>
+      		</div>
+    		<div class="form-group has-feedback has-clear">
+				<label>Install Type: </label>
+				<input id="ecsInstallTypeFilter" class="form-control hasclear" type="text" placeholder="e.g. Centennial, C2R" autocomplete="off" disabled />
+    			<span class="form-control-clear glyphicon glyphicon-remove form-control-feedback hidden"></span>
+      		</div>
+    		<div class="form-group has-feedback has-clear">
+				<label>Platform: </label>
+				<input id="ecsPlatformFilter" class="form-control hasclear" type="text" placeholder="e.g. Win32, MacOS" autocomplete="off" disabled />
+    			<span class="form-control-clear glyphicon glyphicon-remove form-control-feedback hidden"></span>
+      		</div>
+			<div class="text-right">
+    			<button id="ecsClearAllButton" type="button" class="btn btn-primary" disabled >Reset</button>
+    		</div>
+      	</form>
+      	<script src="popup.js"></script>
+    </body>
+  </html>
+  
